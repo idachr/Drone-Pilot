@@ -1,0 +1,123 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  background-color: black;
+}
+
+nav{
+  width: 100vw;
+  padding: 0 2% 0 2%;;
+}
+
+ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  grid-column: 1fr;
+  list-style-type: none;
+  height: 10vh;
+  width: auto;
+  overflow:hidden;
+}
+
+li img {
+  height: 10vh;
+  width: auto;
+  background-color: white;
+}
+
+li>span {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+  transition: 0.5s;
+
+}
+
+li>span:nth-child(1){
+  color: #35DFED;
+
+  font-size: 32px;
+}
+
+li>span:nth-child(2){
+  background-color: black;
+}
+
+li:hover span {
+  transform: translateY(-100%);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Audiowide';
+  font-size: 18px;
+}
+
+.bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-2 {
+  background-image: url("bilder/Drone1.png");
+  height: 60vh;
+  width: 80vw;
+  display: block;
+  margin-right: auto;
+}
+
+.bgimg-3 {
+  background-image: url("bilder/FullLogo.png");
+  min-height: 45vh;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  font-family:'Questrial', sans-serif;;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+@media only screen and (max-device-width: 1024px) {
+.bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+
+
+@media
