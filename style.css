@@ -87,6 +87,12 @@ li a {
 
 }
 
+#Header img {
+  width: 5vw;
+  height: auto;
+  margin: 0 auto;
+}
+
 h3 {
   font-family: 'Questrial';
   text-align: center;
@@ -218,6 +224,7 @@ footer div #link {
   height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border: solid 2px #222222;
 }
 
 
@@ -246,6 +253,40 @@ footer div #link {
   font-family: 'Questrial';
 }
 
+#skjema{
+  background: white;
+  padding: 5% 0;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  display: block;
+  margin: auto;
+
+}
+
+input {
+  font-family:'Questrial';
+  border: solid black 2px;
+}
+
+#quest {
+  width: 30vw;
+  height: auto;
+}
+
+#submit {
+  font-family:'Audiowide';
+  padding: 1%;
+  background-color: #35DFED;
+  border: solid 2px #222222;
+}
+
+#submit:hover{
+  background-color: black;
+  color:#35DFED;
+}
 
 
 @media
