@@ -2,19 +2,21 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
+  width: 100vw;
   display: grid;
-  background-color: black;
+  background: black;
+  font-family: 'Audiowide';
 }
 
 nav{
   width: 100vw;
-  padding: 0 2% 0 2%;;
+  height: 15vh;
 }
 
 ul {
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
   align-items: center;
 }
@@ -25,12 +27,12 @@ li {
   height: 10vh;
   width: auto;
   overflow:hidden;
+  margin-left: 2%;
 }
 
 li img {
   height: 10vh;
   width: auto;
-  background-color: white;
 }
 
 li>span {
@@ -46,7 +48,7 @@ li>span {
 li>span:nth-child(1){
   color: #35DFED;
 
-  font-size: 32px;
+  font-size: 3vw;
 }
 
 li>span:nth-child(2){
@@ -57,65 +59,191 @@ li:hover span {
   transform: translateY(-100%);
 }
 
-a {
+li a {
   color: white;
   text-decoration: none;
   font-family: 'Audiowide';
-  font-size: 18px;
+  font-size: 1.6vw;
 }
 
-.bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
+#Bilde1 {
+  background: url("bilder/Drone1.png");
   background-repeat: no-repeat;
-  background-size: cover;
-
+  background-attachment: fixed;
+  height: 70vh;
+  width: 90vw;
+  margin: auto;
 }
 
-.bgimg-2 {
-  background-image: url("bilder/Drone1.png");
-  height: 60vh;
-  width: 80vw;
-  display: block;
-  margin-right: auto;
-}
-
-.bgimg-3 {
-  background-image: url("bilder/FullLogo.png");
-  min-height: 45vh;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
+#Header {
+  font-size: 6vw;
+  background: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
   text-align: center;
-  color: #000;
-}
 
-.caption span.border {
-  font-family:'Questrial', sans-serif;;
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
 }
 
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+  font-family: 'Questrial';
+  text-align: center;
+  color: white;
+  font-size: 3vw;
+  border-bottom: solid 2px #35DFED;
+  margin: 0;
+  padding-bottom: 2%;
 }
 
-@media only screen and (max-device-width: 1024px) {
-.bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
+h1 {
+  text-align: center;
+  background-color: White;
+  color: Black;
+  height: 100%;
+  margin:0;
+  border: solid 1px black;
+}
+
+#Bilde2 {
+  background: url("bilder/HimmeDrone.png");
+  justify-content:center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+#Bilde2 h3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  height: 100vh;
+
+}
+
+#Bilde3 {
+  background: black;
+  height: 90vh;
+  width: 100vw;
+  margin: auto auto auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+}
+
+.Bilde4 {
+  text-align: center;
+  color: white;
+  grid-column: 1fr;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Bilde4 img {
+  width: auto;
+  height: 40vh;
+  margin: auto;
+  border: 2px solid #35DFED;
+}
+
+footer img {
+  height: 20vh;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+
+}
+
+footer div {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+}
+
+footer div p {
+  font-family: 'Audiowide';
+  font-size: 1.6vw;
+  color: white;
+
+}
+
+footer div #link {
+  font-family: 'Audiowide';
+  font-size: 1.6vw;
+  color: white;
+}
+
+#Company {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-bottom: solid 2px #35DFED;
+
+}
+
+#Company h4 {
+  margin: 0;
+  text-align: center;
+}
+
+#bagg {
+  background-image: url("bilder/Favi.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment:fixed;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 0 auto;
+  height: 70vh;
+  width: 100%;
+}
+
+.Bilde {
+  background-image: url("bilder/Himmel.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment:fixed;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.Bilde img {
+  grid-column: 1fr;
+  width: auto;
+  height: 50vh;
+  display:block;
+  margin: auto;
+  border: solid 2px #222222;
+}
+
+.Tekst {
+  margin-top: 0;
+  border-top: solid 2px #35DFED;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-column: 2fr;
+  padding: 0 0 5% 0;
+  font-size: 2vw;
+}
+
+.Tekst p {
+  grid-column: 2fr;
+  text-align:center;
+  font-family: 'Questrial';
 }
 
 
