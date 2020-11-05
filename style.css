@@ -9,15 +9,15 @@ body {
 }
 
 h1{
-  font-size: 3vw;
+  font-size: 70px;
 }
 
 h2 {
-  font-size: 2.5vw;
+  font-size: 35px;
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 30px;
 }
 
 nav{
@@ -76,11 +76,11 @@ li a {
   color: white;
   text-decoration: none;
   font-family: 'Audiowide';
-  font-size: 1.6vw;
+  font-size: 20px;
 }
 
 #Header {
-  font-size: 6vw;
+  font-size: 80px;
   background: black;
   color: white;
   height: 100vh;
@@ -275,7 +275,7 @@ grid-column-end: 3;
   color: white;
   grid-template-columns: 1fr 1fr;
   background: black;
-  border-bottom: solid 2px #35DFED;
+  background-color: white;
 
 }
 
@@ -285,37 +285,11 @@ grid-column-end: 3;
   color:#00ffaa ;
 }
 
-#bagg {
-  background-color: white;
-  background-image: url("bilder/Favi.png");
-  background-repeat:no-repeat;
-  background-position: center;
-  background-attachment:fixed;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin: 0 auto;
-  height: 70vh;
-  width: 100%;
-}
 
-.Bilde {
-  background-image: url("bilder/Himmel.png");
-  background-repeat:no-repeat;
-  background-position: center;
-  background-attachment:fixed;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  height: 70vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: solid 2px #222222;
-}
-
-
-.Bilde img {
+img {
   grid-column: 1fr;
-  width: auto;
-  height: 50vh;
+  width: 40vw;
+  height:auto;
   display:block;
   margin: auto;
   border: solid 2px #222222;
@@ -323,12 +297,13 @@ grid-column-end: 3;
 
 .Tekst {
   margin-top: 0;
-  border-top: solid 2px #35DFED;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-column: 2fr;
   padding: 0 0 5% 0;
   font-size: 2vw;
+  background-color: white;
+  color: black;
 }
 
 .Tekst p {
@@ -418,7 +393,7 @@ footer {
   width: 100vw;
   color: White;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: #35DFED 2px solid;
 }
 
@@ -447,20 +422,24 @@ footer img {
 
 @media screen and (max-width: 768px){
 
+#Header {
+  font-size: 30px;
+}
+
 h1 {
-font-size: 5vw;
+font-size: 30px;
 }
 
 h2 {
-font-size: 4.5vw;
+font-size: 20px;
 }
 
 h3 {
-font-size: 4vw;
+font-size: 15px;
 }
 
-  p, a,  {
-    font-size: 3vw;
+  p, a  {
+    font-size: 12px;
   }
 
   ul {
@@ -485,6 +464,7 @@ font-size: 4vw;
 
   #Header {
     height: 60vh;
+
   }
 
   #Nyheter {
@@ -509,6 +489,10 @@ font-size: 4vw;
   #NyheterTekst4 {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+
+  #Company {
+    grid-template-columns: 1fr;
   }
 
   #Kjøpe {
@@ -545,7 +529,7 @@ font-size: 4vw;
 
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
   ul {
     padding: 0;
     display: grid;
@@ -554,4 +538,46 @@ font-size: 4vw;
     justify-content: space-around;
     align-items: center;
   }
+
+  #Header {
+    font-size: 40px;
+  }
+
+  h1 {
+  font-size: 30px;
+  }
+
+  h2 {
+  font-size: 25px;
+  }
+
+  h3 {
+  font-size: 20px;
+  }
+
+    p, a  {
+      font-size: 18px;
+    }
+}
+@media screen and (max-width: 900px){
+
+  #Header {
+    font-size: 60px;
+  }
+
+  h1 {
+  font-size: 30px;
+  }
+
+  h2 {
+  font-size: 30px;
+  }
+
+  h3 {
+  font-size: 25px;
+  }
+
+    p, a  {
+      font-size: 20px;
+    }
 }
