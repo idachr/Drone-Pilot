@@ -132,6 +132,8 @@ grid-column-end: 3;
   grid-column-end: 3;
   height: 100vh;
   width: 100vw;
+  /* https://pixabay.com/no/photos/drone-sykkel-natur-overv%C3%A5king-3419851/
+ */
   background-image: url("bilder/Drone1.png");
   background-repeat:no-repeat;
   background-position: center;
@@ -170,6 +172,8 @@ grid-column-end: 3;
   text-align: center;
 }
 
+
+/*https://codemyui.com/color-swoosh-through-text-animation/*/
 #NyheterTekst2 h2 {
   text-transform: uppercase;
   background: linear-gradient(to right, #000000 50%, #25bFcD 50%);
@@ -194,6 +198,7 @@ grid-column-end: 3;
   grid-column: 1fr;
   height: 70vh;
   width: 50vw;
+  /* https://www.pxfuel.com/en/free-photo-xvlgh */
   background-image: url("bilder/DRONE2.jpg");
   background-repeat:no-repeat;
   background-position: center;
@@ -216,6 +221,8 @@ grid-column-end: 3;
   grid-column: 1fr;
   height: 70vh;
   width: 50vw;
+  /* https://pixabay.com/it/photos/drone-volano-tramonto-sunrise-mare-3819901/
+ */
   background-image: url("bilder/HimmeDrone.png");
   background-repeat:no-repeat;
   background-position: center;
@@ -226,6 +233,8 @@ grid-column-end: 3;
   grid-column: 1fr;
   height: 70vh;
   width: 50vw;
+  /* https://pixabay.com/it/photos/drone-volano-tramonto-sunrise-mare-3819901/
+ */
   background-image: url("bilder/HimmeDrone.png");
   background-repeat:no-repeat;
   background-position: center;
@@ -236,6 +245,7 @@ grid-column-end: 3;
   grid-column: 1fr;
   height: 70vh;
   width: 50vw;
+  /* https://www.tedeytan.com/2019/03/02/30579 */
   background-image: url("bilder/dronebilde2.jpg");
   background-repeat:no-repeat;
   background-attachment: fixed;
